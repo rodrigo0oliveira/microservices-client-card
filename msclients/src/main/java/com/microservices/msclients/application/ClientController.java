@@ -4,6 +4,7 @@ package com.microservices.msclients.application;
 import com.microservices.msclients.domain.Client;
 import com.microservices.msclients.domain.ClientSaveRequest;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,11 +12,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/clients")
+@RequestMapping("clients")
 @RequiredArgsConstructor
+@Slf4j
 public class ClientController {
 
     private final ClientService clientService;
+
+    @GetMapping
+    public String status(){
+        log.info("Register new instance of client microservice");
+        return "status";
+    }
 
     @PostMapping
     public ResponseEntity<Client> saveClient(@RequestBody ClientSaveRequest client){
