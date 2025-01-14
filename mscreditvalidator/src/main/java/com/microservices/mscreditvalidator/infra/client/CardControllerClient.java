@@ -1,6 +1,7 @@
 package com.microservices.mscreditvalidator.infra.client;
 
 import com.microservices.mscreditvalidator.domain.ClientCard;
+import com.microservices.mscreditvalidator.domain.Card;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,4 +14,7 @@ public interface CardControllerClient {
 
     @GetMapping(params = "cpf")
     ResponseEntity<List<ClientCard>> getClientCards(@RequestParam(name = "cpf")String cpf);
+
+    @GetMapping(params = "income")
+    ResponseEntity<List<Card>> getCardByIncomeLessThanEqual(@RequestParam(name = "income") Long income);
 }

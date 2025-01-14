@@ -1,12 +1,11 @@
 package com.microservices.mscreditvalidator.application;
 
 import com.microservices.mscreditvalidator.domain.ClientSituation;
+import com.microservices.mscreditvalidator.domain.dto.EvaluationData;
+import com.microservices.mscreditvalidator.domain.dto.ResponseEvaluation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("creditvalidator")
@@ -19,5 +18,11 @@ public class CreditValidatorController {
     public ResponseEntity<ClientSituation> getClientSituation(@RequestParam(name = "cpf")String cpf) {
         ClientSituation clientSituation = creditValidatorService.getClientSituation(cpf);
         return ResponseEntity.ok(clientSituation);
+    }
+
+    @PostMapping
+    public ResponseEntity<ResponseEvaluation> doEvaluation(@RequestBody EvaluationData data){
+        ResponseEvaluation responseEvaluation = creditValidatorService.doEvaluation(data.cpf(), data.income());
+        return ResponseEntity.ok(responseEvaluation);
     }
 }
