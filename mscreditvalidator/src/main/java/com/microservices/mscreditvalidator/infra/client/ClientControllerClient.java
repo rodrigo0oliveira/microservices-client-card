@@ -1,4 +1,4 @@
-package com.microservices.mscreditvalidator.infra;
+package com.microservices.mscreditvalidator.infra.client;
 
 import com.microservices.mscreditvalidator.domain.ClientData;
 import org.springframework.cloud.openfeign.FeignClient;
