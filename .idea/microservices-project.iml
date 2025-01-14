@@ -2,7 +2,17 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/mscards/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/mscards/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/mscards/build" />
+      <excludeFolder url="file://$MODULE_DIR$/msclients/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/msclients/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/msclients/build" />
+      <excludeFolder url="file://$MODULE_DIR$/mscloudgateway/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/mscloudgateway/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/mscloudgateway/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

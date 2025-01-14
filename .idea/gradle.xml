@@ -4,10 +4,26 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/creditvalidator" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/creditvalidator" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/eurekaserver" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/eurekaserver" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mscreditvalidator" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/mscreditvalidator" />
           </set>
         </option>
       </GradleProjectSettings>

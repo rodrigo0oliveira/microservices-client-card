@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eurekaserver.iml" filepath="$PROJECT_DIR$/.idea/modules/eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microservices-project.iml" filepath="$PROJECT_DIR$/.idea/microservices-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mscreditvalidator/mscreditvalidator.iml" filepath="$PROJECT_DIR$/mscreditvalidator/mscreditvalidator.iml" />
     </modules>
   </component>
 </project>
