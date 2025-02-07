@@ -17,5 +17,5 @@ public class ClientCard {
 
     private String flagCard;
 
-    private BigDecimal basicLimit;
+    private BigDecimal limit;
 }
