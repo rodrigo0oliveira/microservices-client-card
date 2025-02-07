@@ -17,7 +17,7 @@ public class Card {
 
     private String name;
 
-    private String flag;
+    private FlagCard flagCard;
 
     private BigDecimal basicLimit;
 }

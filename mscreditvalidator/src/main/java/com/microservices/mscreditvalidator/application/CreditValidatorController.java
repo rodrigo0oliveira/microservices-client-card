@@ -1,7 +1,10 @@
 package com.microservices.mscreditvalidator.application;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.microservices.mscreditvalidator.domain.ClientSituation;
 import com.microservices.mscreditvalidator.domain.dto.EvaluationData;
+import com.microservices.mscreditvalidator.domain.dto.RequestDataCardIssuer;
+import com.microservices.mscreditvalidator.domain.dto.RequestProtocol;
 import com.microservices.mscreditvalidator.domain.dto.ResponseEvaluation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -24,5 +27,11 @@ public class CreditValidatorController {
     public ResponseEntity<ResponseEvaluation> doEvaluation(@RequestBody EvaluationData data){
         ResponseEvaluation responseEvaluation = creditValidatorService.doEvaluation(data.cpf(), data.income());
         return ResponseEntity.ok(responseEvaluation);
+    }
+
+@PostMapping("/request-card")
+    public ResponseEntity<RequestProtocol> requestCardIssuer(@RequestBody RequestDataCardIssuer request) throws JsonProcessingException {
+        RequestProtocol requestProtocol =  creditValidatorService.cardIssuer(request);
+        return ResponseEntity.ok(requestProtocol);
     }
 }

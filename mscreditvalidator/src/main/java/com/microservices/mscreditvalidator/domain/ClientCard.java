@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,5 +17,5 @@ public class ClientCard {
 
     private String flagCard;
 
-    private String basicLimit;
+    private BigDecimal basicLimit;
 }
