@@ -21,7 +21,7 @@ public class CardByClientResponse {
         return new CardByClientResponse(
                 clientCard.getCard().getName(),
                 clientCard.getCard().getFlagCard(),
-                clientCard.getBasicLimit()
+                clientCard.getCard().getBasicLimit()
         );
     }
 

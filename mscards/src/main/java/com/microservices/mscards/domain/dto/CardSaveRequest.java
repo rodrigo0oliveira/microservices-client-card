@@ -1,5 +1,7 @@
-package com.microservices.mscards.domain;
+package com.microservices.mscards.domain.dto;
 
+
+import com.microservices.mscards.domain.FlagCard;
 
 import java.math.BigDecimal;
 

@@ -1,7 +1,7 @@
 package com.microservices.mscards.application;
 
 import com.microservices.mscards.domain.Card;
-import com.microservices.mscards.domain.CardSaveRequest;
+import com.microservices.mscards.domain.dto.CardSaveRequest;
 import com.microservices.mscards.infra.repository.CardRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

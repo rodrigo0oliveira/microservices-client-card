@@ -2,7 +2,7 @@ package com.microservices.mscards.application;
 
 import com.microservices.mscards.domain.Card;
 import com.microservices.mscards.domain.CardByClientResponse;
-import com.microservices.mscards.domain.CardSaveRequest;
+import com.microservices.mscards.domain.dto.CardSaveRequest;
 import com.microservices.mscards.domain.ClientCard;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
